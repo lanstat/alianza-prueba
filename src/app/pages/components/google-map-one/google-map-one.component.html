@@ -1,6 +1,9 @@
 <ng-template #GoogleMapOneComponent>
   <!-- Google Map
     ============================================= -->
-  <section id="google-map" class="gmap slider-parallax"></section>
+  <!-- <section id="google-map" class="gmap slider-parallax"></section> -->
+  <agm-map [latitude]="initialPoint.lat" [longitude]="initialPoint.lng">
+    <agm-marker *ngFor="let point of points" [latitude]="point.lat" [longitude]="point.lng"></agm-marker>
+  </agm-map>
 
 </ng-template>
