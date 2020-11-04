@@ -3,7 +3,29 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  backend: {
+    server: {
+      webpath: 'http://localhost:8001'
+    }
+  },
+  frontend: {
+    template: {
+      assets:'/assets',
+      canvas:'/assets/canvas',
+      inspinia:'/assets/inspinia',
+      esvender:'/assets/esvender',
+      esvenderJS:'/assets/esvender',
+      esvenderCSS:'/assets/esvender/layout/style1',
+      admin:'/assets/admin',
+      adminJS:'/assets/admin',
+      adminCSS:'/assets/admin/layout/style1'
+    },
+    sql:true,
+    server: {
+      webpath: 'http://localhost:4200'
+    }
+  }
 };
 
 /*
